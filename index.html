@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Image</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img id="image1" src="./lion svg-01.svg" alt="Image 1" class="togimg">
+        <img id="image2" src="./lion2-01.svg" alt="Image 2" class="togimg" style="display: none;">
+        <div id="imageOptions" class="image-options">
+            <button id="addUrlButton" class="button">Add URL</button>
+            <button id="uploadButton" class="button">Upload Image</button>
+            <div id="urlInputContainer" style="display: none;">
+                <input type="text" id="imageUrlInput" placeholder="Enter Image URL">
+                <button id="replaceButton" class="button">Replace with URL</button>
+            </div>
+        </div>
+    </div>
+    <h1 class="heading" id="message">Click me to replace!</h1>
+    <input type="file" id="fileInput" style="display: none;">
+    <script src="script.js"></script>
+</body>
+</html>
